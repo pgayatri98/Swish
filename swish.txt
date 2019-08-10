@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int x,p,temp,ans;
+    scanf("%d",&p);
+    scanf("%d",&x);
+    ans = p;
+    while(1)
+    {
+        temp = (p*x)/100;
+        if(temp==0)
+        {
+            break ;
+        }
+        p-=temp;
+        ans+=p;
+    }
+    printf("%d",ans);
+    return 0;
+}
+
